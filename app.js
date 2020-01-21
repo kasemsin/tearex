@@ -6,5 +6,13 @@ new Vue({
     age:27,
     status:false
 
+  },
+  methods:{
+    getName:function(){
+      return this.name
+    },
+    setName:function(n){
+      return this.name=n
+    }
   }
 })
