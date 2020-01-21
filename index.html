@@ -2,16 +2,18 @@
 <html>
   <head>
       <meta charset="utf-8">
-      <title> Vue.JS - Tutorial</title>
+      <title> Vue.JS - TEAREX's LAB</title>
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
 
   <div id="vue-app">
-    <h1>{{setName('Batman')}}</h1>
-    <p>Job :{{job}}</p>
-    <b>Age :{{age}}</b>
-
+    <h1>Name : {{name}}</h1>
+    <h1>Job : {{job}}</h1>
+    <h1>Lesson : {{part}}</h1>
+    <h1>Website : <a v-bind:href="website">Click link...</a></h1>
+    <input type="text" name="" v-bind:value="name">
+    <input type="text" name="" v-bind:value="job">
   </div>
 
   <script src="app.js" charset="utf-8"></script>

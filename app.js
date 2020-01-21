@@ -3,8 +3,9 @@ new Vue({
   data:{
     name:"MAX TEAREX",
     job:"Electrical Engineer",
-    age:27,
-    status:false
+    part:3,
+    status:false,
+    website:'https://www.youtube.com/watch?v=xgAuekvDqYo&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=3',
 
   },
   methods:{
