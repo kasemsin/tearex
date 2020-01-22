@@ -2,9 +2,12 @@ new Vue({
   el:"#vue-app",
   data:{
 
-    like:false
-
-
+    like:false,
+    product:['ผงซักฟอก','แปรงสีฟัน','สบู่','ผ้าขนหนู','กางเกง','เสื้อ'],
+    employee:[
+      {name:'พงษ์ศักดิ์',age:25,status:true},
+      {name:'สมพงศ์',age:30,status:false},
+    ]
   /*
     name:"Kasemsin Supsukbaworn",
     job:"",

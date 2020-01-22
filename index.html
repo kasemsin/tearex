@@ -10,12 +10,20 @@
 
 
   <div id="vue-app">
-Chapter : 10
+Next Chapter : 12
+
     <br><br>
     <button type="button" v-on:click="like=!like">Like</button>
-    <h1 v-if="like">Hello motherfucker</h1>
+    <h1 v-if="like">Hello Motherfucker !!!</h1>
+
+        <ul>
+          <li v-for="result in product">{{result}}</li>
+        </ul>
 
 
+        <ul>
+          <li v-for="emp in employee" v-if="emp.status">{{emp.name}} | {{emp.age}} | {{emp.status}}</li>
+        </ul>
 
 
 
