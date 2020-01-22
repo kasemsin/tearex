@@ -3,7 +3,7 @@ new Vue({
   data:{
     name:"MAX TEAREX",
     job:"Electrical Engineer",
-    part:3,
+    age:20,
     status:false,
     website:'https://www.youtube.com/watch?v=xgAuekvDqYo&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=3',
 
@@ -14,6 +14,14 @@ new Vue({
     },
     setName:function(n){
       return this.name=n
+    },
+    addAge:function(){
+      this.age++;
+      console.log(this.age);
+    },
+    SubtractAge:function(){
+      this.age--;
+      console.log(this.age);
     }
   }
 })

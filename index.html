@@ -7,16 +7,19 @@
   </head>
   <body>
 
+  <script src="app.js" charset="utf-8"></script>
   <div id="vue-app">
     <h1>Name : {{name}}</h1>
     <h1>Job : {{job}}</h1>
-    <h1>Lesson : {{part}}</h1>
+    <h1>Age : {{age}}</h1>
     <h1>Website : <a v-bind:href="website">Click link...</a></h1>
-    <input type="text" name="" v-bind:value="name">
-    <input type="text" name="" v-bind:value="job">
+    <input type="text" name="" v-bind:value="age">
+    <input type="text" name="" v-bind:value="job"></br></br>
+
+    <button type="button" v-on:click="addAge()" >Add</button>
+    <button type="button" v-on:click="SubtractAge()">Subtract</button>
   </div>
 
-  <script src="app.js" charset="utf-8"></script>
   </body>
 
 
