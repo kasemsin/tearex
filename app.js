@@ -7,7 +7,8 @@ new Vue({
     status:false,
     count:0,
     foods:[],
-    website:'https://www.youtube.com/watch?v=xgAuekvDqYo&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=3',
+    gender:'',
+    website:'https://www.youtube.com/watch?v=WiaNYcbCHFw&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=8',
 
   },
   methods:{
