@@ -27,16 +27,24 @@
     <br>
     <input type="radio" name="" value="Female" v-model="gender">
     <label>Female</label>
-
+    <br>
+    Job :
+    <select v-model="job">
+              <option disabled value="">Choose your job</option>
+              <option>Programmer</option>
+              <option>Engineer</option>
+              <option>Merchant</option>
+    </select>
     <hr>
 
-    NEXT CHAPTER : 9
+    NEXT CHAPTER : 10
     <h1>Name : {{name}}</h1>
     <h1>Job : {{job}}</h1>
     <h1>Age : {{age}}</h1>
     <h1>Food : {{foods}}<h1>
     <h1>Website : <a v-bind:href="website">Click link...</a></h1>
     <h1>Gender : {{gender}}</h1>
+
     <input type="text" name="" v-bind:value="job">
     </br>
     <input type="text" v-on:keyup.enter="addCount" name="" value="">

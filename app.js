@@ -2,8 +2,8 @@ new Vue({
   el:"#vue-app",
   data:{
     name:"Kasemsin Supsukbaworn",
-    job:"Electrical Engineer",
-    age:20,
+    job:"",
+    age:27,
     status:false,
     count:0,
     foods:[],
