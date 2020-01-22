@@ -1,11 +1,12 @@
 new Vue({
   el:"#vue-app",
   data:{
-    name:"MAX TEAREX",
+    name:"Kasemsin Supsukbaworn",
     job:"Electrical Engineer",
     age:20,
     status:false,
     count:0,
+    foods:[],
     website:'https://www.youtube.com/watch?v=xgAuekvDqYo&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=3',
 
   },

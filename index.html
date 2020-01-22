@@ -11,10 +11,20 @@
 
   <div id="vue-app">
     Name : <input type="text" v-model="name" >
+    Food Fav :
+    <input type="checkbox" name="" value="ส้มตำ" v-model="foods">
+    <label>ส้มตำ</label>
+    <input type="checkbox" name="" value="พิซซ่า" v-model="foods">
+    <label>พิซซ่า</label>
+    <input type="checkbox" name="" value="มาม่า" v-model = "foods">
+    <label>มาม่า</label>
+
+
     <hr>
     <h1>Name : {{name}}</h1>
     <h1>Job : {{job}}</h1>
     <h1>Age : {{age}}</h1>
+    <h1>Food : {{foods}}<h1>
     <h1>Website : <a v-bind:href="website">Click link...</a></h1>
 
     <input type="text" name="" v-bind:value="job">
