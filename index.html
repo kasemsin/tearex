@@ -10,6 +10,23 @@
 
 
   <div id="vue-app">
+Chapter : 10
+    <br><br>
+    <button type="button" v-on:click="like=!like">Like</button>
+    <h1 v-if="like">Hello motherfucker</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
     Name : <input type="text" v-model="name" >
     <br>
     Food Fav :
@@ -41,18 +58,21 @@
     <h1>Name : {{name}}</h1>
     <h1>Job : {{job}}</h1>
     <h1>Age : {{age}}</h1>
-    <h1>Food : {{foods}}<h1>
+    <h1>Food : {{foods}}</h1>
     <h1>Website : <a v-bind:href="website">Click link...</a></h1>
     <h1>Gender : {{gender}}</h1>
 
     <input type="text" name="" v-bind:value="job">
-    </br>
+    </br></br>
     <input type="text" v-on:keyup.enter="addCount" name="" value="">
-    <h1>Count:{{count}}</h1>
+    <h1>Enter count:{{count}}</h1>
     </br></br>
 
     <button type="button" v-on:click="addAge" >Add</button>
     <button type="button" v-on:click="SubtractAge">Subtract</button>
+    !-->
+
+
   </div>
   <script src="app.js" charset="utf-8"></script>
   </body>

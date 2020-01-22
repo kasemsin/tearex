@@ -1,6 +1,11 @@
 new Vue({
   el:"#vue-app",
   data:{
+
+    like:false
+
+
+  /*
     name:"Kasemsin Supsukbaworn",
     job:"",
     age:27,
@@ -9,9 +14,10 @@ new Vue({
     foods:[],
     gender:'',
     website:'https://www.youtube.com/watch?v=WiaNYcbCHFw&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=8',
-
+*/
   },
   methods:{
+    /*
     getName:function(){
       return this.name
     },
@@ -30,5 +36,6 @@ new Vue({
       this.count++;
       console.log(this.age);
     }
+    */
   }
 })
