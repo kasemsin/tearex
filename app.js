@@ -5,6 +5,7 @@ new Vue({
     job:"Electrical Engineer",
     age:20,
     status:false,
+    count:0,
     website:'https://www.youtube.com/watch?v=xgAuekvDqYo&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=3',
 
   },
@@ -21,6 +22,10 @@ new Vue({
     },
     SubtractAge:function(){
       this.age--;
+      console.log(this.age);
+    },
+    addCount:function(){
+      this.count++;
       console.log(this.age);
     }
   }
