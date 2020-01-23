@@ -33,16 +33,45 @@ new Vue({
     website:'https://www.youtube.com/watch?v=WiaNYcbCHFw&list=PLEE74DyIkwEnQ3fqgLNRnBHdGONErIKzL&index=8',
 */
   },
-  methods:{
+  methods:
+  {
 
-    addEmp:function(){
+    addEmp:function()
+    {
       this.empGroup.push({
         empName: this.newData.empName,
         salary: this.newData.salary
       });
       this.newData.empName = '';
       this.newData.salary = 0;
+    },
+    // summation:function(a,b)
+    // {
+    //   var sum=a+b;
+    //   return sum;
+    // }
+  },
+
+  computed:
+  {
+
+      // แยกมาจัดการด้านการคำนวณ
+    summation:function()
+      {
+        var sum = this.empGroup.reduce(function(value,data){
+        return value + Number(data.salary);
+      },0);
+      return sum;
+    },
+    avg:function()
+    {
+      var sum = this.empGroup.reduce(function(value,data){
+      return value + Number(data.salary);
+    },0);
+    return sum/this.empGroup.length;
     }
+
+  }
     /*
     getName:function(){
       return this.name
@@ -63,5 +92,5 @@ new Vue({
       console.log(this.age);
     }
     */
-  }
+
 })

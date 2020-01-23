@@ -10,7 +10,7 @@
 
 
   <div id="vue-app">
-Next Chapter : 13
+Next Chapter : 14
   <br>
   <span>ชื่อพนักงาน</span>
   <input v-model="newData.empName">
@@ -25,7 +25,12 @@ Next Chapter : 13
     <li v-for="emp in empGroup">
       {{emp.empName}} ได้เงินเดือน {{emp.salary}}
     </li>
-  </ul>
+
+      </ul>
+<h1>จำนวนเงินที่ต้องจ่ายพนักงาน : {{summation}}</h1>
+<h1>ค่าเฉลี่ย : {{avg}}</h1>
+
+
 
 <!--
     <br><br>
