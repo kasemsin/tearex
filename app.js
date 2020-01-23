@@ -50,8 +50,13 @@ new Vue({
     //   var sum=a+b;
     //   return sum;
     // }
-  },
-
+  // },
+    showMessage:function() {
+      // console.log("บันทึกข้อมูลเรียบร้อย");
+      alert("Complete");
+      console.log("Send data...");
+    }
+},
   computed:
   {
 
@@ -59,17 +64,24 @@ new Vue({
     summation:function()
       {
         var sum = this.empGroup.reduce(function(value,data){
-        return value + Number(data.salary);
-      },0);
+        return value + Number(data.salary);},0);
       return sum;
     },
     avg:function()
     {
       var sum = this.empGroup.reduce(function(value,data){
-      return value + Number(data.salary);
-    },0);
+      return value + Number(data.salary);},0);
     return sum/this.empGroup.length;
     }
+
+  },
+  watch: {
+    //หลังจากที่ summation ทำงานเสร็จ
+    summation: function() {
+      //ทำอะไร
+       this.showMessage();
+
+    },
 
   }
     /*
