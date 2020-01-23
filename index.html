@@ -7,10 +7,26 @@
   </head>
   <body>
 
+<div id="post">
+  Next chapter 16 <br>
+  หัวข้อ : {{title}} <br>
+  ข้อความ:{{message}}
+</div>
+
+<div id="comment">
+  <textarea name="name" rows="8" cols="80">{{text}}</textarea>
+</div>
+
+<div id="likeSystem">
+<button type="button" name="button" v-on:click="like=!like" >Like</button>
+{{like}}
+</div>
 
 
-  <div id="vue-app">
-Next Chapter : 15
+
+
+  <!-- <div id="vue-app">
+Next Chapter : 16
   <br>
   <span>ชื่อพนักงาน</span>
   <input v-model="newData.empName">
@@ -28,7 +44,7 @@ Next Chapter : 15
 
       </ul>
 <h1>จำนวนเงินที่ต้องจ่ายพนักงาน : {{summation}}</h1>
-<h1>ค่าเฉลี่ย : {{avg}}</h1>
+<h1>ค่าเฉลี่ย : {{avg}}</h1> -->
 
 
 
@@ -92,7 +108,7 @@ Next Chapter : 15
     !-->
 
 
-  </div>
+  <!-- </div> -->
   <script src="app.js" charset="utf-8"></script>
   </body>
 
