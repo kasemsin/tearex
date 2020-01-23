@@ -1,29 +1,50 @@
-var post=new Vue({
-  el:"#post",
-  data:{
-    title:'ส่งโปรเจค',
-    message:'รายละเอียดโปรเจค'
+//custom tag
+Vue.component('max',{
+
+data:function() {
+
+  return{
+    count:0
   }
+},
+template:'<button @click="count++">Click : {{count}}</button>'
+
 });
 
-var comment=new Vue({
-  el:"#comment",
-  data:{
-    text:'อากาศดีมาก',
-  }
+Vue.component('post',{
+  template:'<h3>Next chapter 17</h3>'
 });
 
-var likeSystem=new Vue({
-  el:"#likeSystem",
-  data:{
-    like:false
-  },
-  methods:{
-    changeLike:function(){
-      console.log("like");
-    }
-  }
+new Vue({
+  el:"#vue-app"
 });
+
+// var post=new Vue({
+//   el:"#post",
+//   data:{
+//     title:'ส่งโปรเจค',
+//     message:'รายละเอียดโปรเจค'
+//   }
+// });
+//
+// var comment=new Vue({
+//   el:"#comment",
+//   data:{
+//     text:'อากาศดีมาก',
+//   }
+// });
+//
+// var likeSystem=new Vue({
+//   el:"#likeSystem",
+//   data:{
+//     like:false
+//   },
+//   methods:{
+//     changeLike:function(){
+//       console.log("like");
+//     }
+//   }
+// });
 
 
 
