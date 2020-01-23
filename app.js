@@ -1,14 +1,28 @@
 new Vue({
   el:"#vue-app",
   data:{
-
+    newData:{
+      empName:'',
+      salary:0,
+    },
+    empGroup:[
+      {
+        empName:"สมพร",
+        salary: 5000,
+      },
+      {
+        empName:"สมศรี",
+        salary: 4000,
+      },
+    ]
+/*
     like:false,
     product:['ผงซักฟอก','แปรงสีฟัน','สบู่','ผ้าขนหนู','กางเกง','เสื้อ'],
     employee:[
       {name:'พงษ์ศักดิ์',age:25,status:true},
       {name:'สมพงศ์',age:30,status:false},
     ]
-  /*
+
     name:"Kasemsin Supsukbaworn",
     job:"",
     age:27,
@@ -20,6 +34,15 @@ new Vue({
 */
   },
   methods:{
+
+    addEmp:function(){
+      this.empGroup.push({
+        empName: this.newData.empName,
+        salary: this.newData.salary
+      });
+      this.newData.empName = '';
+      this.newData.salary = 0;
+    }
     /*
     getName:function(){
       return this.name

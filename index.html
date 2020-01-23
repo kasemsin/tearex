@@ -10,8 +10,24 @@
 
 
   <div id="vue-app">
-Next Chapter : 12
+Next Chapter : 13
+  <br>
+  <span>ชื่อพนักงาน</span>
+  <input v-model="newData.empName">
+  <br>
 
+  <span>เงินเดือน</span>
+  <input v-model="newData.salary">
+  <br><br>
+  <button @click="addEmp">บันทึกข้อมูล</button>
+  <br>
+  <ul>
+    <li v-for="emp in empGroup">
+      {{emp.empName}} ได้เงินเดือน {{emp.salary}}
+    </li>
+  </ul>
+
+<!--
     <br><br>
     <button type="button" v-on:click="like=!like">Like</button>
     <h1 v-if="like">Hello Motherfucker !!!</h1>
@@ -25,16 +41,6 @@ Next Chapter : 12
           <li v-for="emp in employee" v-if="emp.status">{{emp.name}} | {{emp.age}} | {{emp.status}}</li>
         </ul>
 
-
-
-
-
-
-
-
-
-
-    <!--
     Name : <input type="text" v-model="name" >
     <br>
     Food Fav :
