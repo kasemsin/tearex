@@ -11,10 +11,29 @@ template:'<button @click="count++">Click : {{count}}</button>'
 
 });
 
-Vue.component('post',{
-  props:['title'],
-  template:'<h3>{{title}}</h3>',
+Vue.component('showview',{
+  props:{
+    title:{
+      type:String,
+      required:true, //จำเป็นต้องใส่
+      default:"haha"
+    },
+    view:{
+      type:Number,
+      default:0
+    }
+  },
+  template:'<h3>{{title}} | {{view}}</h3>',
 });
+
+Vue.component('post',{
+  props:['title','view'],
+  template:'<h3>{{title}} | {{view}}</h3>',
+});
+//Custom youtube
+
+
+
 
 new Vue({
   el:"#vue-app"
