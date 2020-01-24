@@ -12,7 +12,8 @@ template:'<button @click="count++">Click : {{count}}</button>'
 });
 
 Vue.component('post',{
-  template:'<h3>Next chapter 17</h3>'
+  props:['title'],
+  template:'<h3>{{title}}</h3>',
 });
 
 new Vue({
