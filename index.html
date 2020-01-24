@@ -9,15 +9,31 @@
 
 
 <div id="vue-app">
-  <ul>
+  <food-app>
+    <h2>อาหารอีสาน</h2>
+    <ul>
+      <li>ก้อย</li>
+      <li>ส้มตำ</li>
+    </ul>
+  </food-app>
+  <food-app>
+    <h2>อาหารใต้</h2>
+    <ul>
+      <li>แกงเหลือง</li>
+      <li>แกงไตปลา</li>
+    </ul>
+  </food-app>
+
+
+
+
+  <!-- <ul>
     <li v-for="comment in comments"
     is ="showcomment"
     v-bind:commentpost="comment"
     ></li>
   </ul>
-<input type="text" v-model="newComment" v-on:keyup.enter="addComment">
-
-
+<input type="text" v-model="newComment" v-on:keyup.enter="addComment"> -->
 
 
   <!-- <post title="MAX TREX" view="500"></post>
@@ -30,7 +46,13 @@
   <post></post>
   <post></post> -->
 </div>
+<template id="foodarea">
+    <div id="food">
 
+          <slot></slot>
+
+    </div>
+</template>
 
 <!--
 <div id="post">
