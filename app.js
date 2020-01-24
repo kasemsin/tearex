@@ -31,12 +31,29 @@ Vue.component('post',{
   template:'<h3>{{title}} | {{view}}</h3>',
 });
 //Custom youtube
+Vue.component('showcomment',{
 
+    props:['commentpost'],
+    template:'<li><i>{{commentpost}}</i></li>',
+})
 
 
 
 new Vue({
-  el:"#vue-app"
+  el:"#vue-app",
+  data:{
+    newComment:'',
+    comments:[
+      'สวัสดีตอนเช้า','ทักทาย','ยินดีด้วย','สบายดี'
+    ]
+  },
+  methods:{
+//เพิ่ม comment ลงไป
+    addComment:function(){
+        this.comments.push(this.newComment)
+        this.newComment=''
+    }
+  }
 });
 
 // var post=new Vue({

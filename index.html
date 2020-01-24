@@ -9,11 +9,22 @@
 
 
 <div id="vue-app">
-  <post title="MAX TREX" view="500"></post>
+  <ul>
+    <li v-for="comment in comments"
+    is ="showcomment"
+    v-bind:commentpost="comment"
+    ></li>
+  </ul>
+<input type="text" v-model="newComment" v-on:keyup.enter="addComment">
+
+
+
+
+  <!-- <post title="MAX TREX" view="500"></post>
 
     <showview title="Java Tutorial" v-bind:view=100></showview>
     <showview title="Vue tutorial" ></showview>
-    <showview title="Photoshop" v-bind:view=500 ></showview>
+    <showview title="Photoshop" v-bind:view=500 ></showview> -->
   <!-- <max></max>
   <max></max><br>
   <post></post>
