@@ -3,40 +3,30 @@
   <head>
       <meta charset="utf-8">
       <title> Vue.JS - TEAREX's LAB</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
 
 
-<div id="vue-app">
-  <food-app>
-    <h2>อาหารอีสาน</h2>
-    <ul>
-      <li>ก้อย</li>
-      <li>ส้มตำ</li>
-    </ul>
-  </food-app>
-  <food-app>
-    <h2>อาหารใต้</h2>
-    <ul>
-      <li>แกงเหลือง</li>
-      <li>แกงไตปลา</li>
-    </ul>
-  </food-app>
+<div class="container" id="app">
+  <h2 align="center">Mini Workshop Limit Character</h2>
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" name="" value="" class="form-control" v-model="text" :maxlength="max">
+      <div class="input-group-addon" v-text="(max-text.length)"></div>
+    </div>
 
-
-
-
-  <!-- <ul>
+  </div>
+</div>
+<!-- <ul>
     <li v-for="comment in comments"
     is ="showcomment"
     v-bind:commentpost="comment"
     ></li>
   </ul>
 <input type="text" v-model="newComment" v-on:keyup.enter="addComment"> -->
-
-
-  <!-- <post title="MAX TREX" view="500"></post>
+<!-- <post title="MAX TREX" view="500"></post>
 
     <showview title="Java Tutorial" v-bind:view=100></showview>
     <showview title="Vue tutorial" ></showview>
@@ -45,15 +35,13 @@
   <max></max><br>
   <post></post>
   <post></post> -->
-</div>
-<template id="foodarea">
+<!-- <template id="foodarea">
     <div id="food">
 
           <slot></slot>
 
     </div>
-</template>
-
+</template> -->
 <!--
 <div id="post">
   Next chapter 16 <br>
@@ -69,11 +57,7 @@
 <button type="button" name="button" v-on:click="like=!like" >Like</button>
 {{like}}
 </div> -->
-
-
-
-
-  <!-- <div id="vue-app">
+<!-- <div id="vue-app">
 Next Chapter : 16
   <br>
   <span>ชื่อพนักงาน</span>
@@ -93,9 +77,6 @@ Next Chapter : 16
       </ul>
 <h1>จำนวนเงินที่ต้องจ่ายพนักงาน : {{summation}}</h1>
 <h1>ค่าเฉลี่ย : {{avg}}</h1> -->
-
-
-
 <!--
     <br><br>
     <button type="button" v-on:click="like=!like">Like</button>
@@ -154,10 +135,22 @@ Next Chapter : 16
     <button type="button" v-on:click="addAge" >Add</button>
     <button type="button" v-on:click="SubtractAge">Subtract</button>
     !-->
-
-
-  <!-- </div> -->
+<!-- </div> -->
   <script src="app.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    new Vue({
+      el:'#app',
+      data:{
+          max:20,
+          text:'',
+
+      }
+    })
+  </script>
   </body>
 
 
