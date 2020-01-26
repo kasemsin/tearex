@@ -17,14 +17,14 @@
       <div class="container" id="app">
         <h2 align="center">Mini Workshop : ตระกร้าสินค้า </h2>
       <div class="row">
-          <div class="col-md-4" v-for="item in items">
-            <img :src="item.url" alt="" width="320px" height="320px" style="border:1px solid #000">
+          <div  class="col-md-4" v-for="item in items">
+            <img :src="item.url" alt="" width="300px" height="300px" style="border:1px solid #000">
             <h3><b>ชื่อสินค้า : {{item.name}}</b></h3>
             <h4>ราคา : {{item.price}}</h4>
-            <input type="checkbox" name="" value="" class="form-control">
+            <input type="checkbox" name="" value="" class="form-control" @click="selected(item)">
           </div>
       </div>
-
+      <h2>ราคารวม : {{total()}} บาท</h2>
 
       </div>
       <script src="app.js" charset="utf-8"></script>
