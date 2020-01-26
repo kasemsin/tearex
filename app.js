@@ -8,13 +8,10 @@ new Vue ({
       var files =e.target.files || e.dataTransfer.files;
       if(!files.length)
         return;
-      this.createImage(file[0]);
-      console.log("เลือกไฟล์แล้ว");
+      this.createImage(files[0]);
+      console.log("เลือกไฟล์แล้วววววว");
     },
-    onF(e){
 
-      console.log("เลือกไฟล์แล้ว");
-    },
 
     createImage(file){
         var image=new Image();

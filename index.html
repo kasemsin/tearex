@@ -5,20 +5,60 @@
       <title> Vue.JS - TEAREX's LAB</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<style>
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.col-50{
+  float: left;
+  height: 200px;
+  width: 50%;
+}
+#div-1{
+   background-color: red;
+}
+#div-2{
+   background-color: blue;
+}
+
+
+</style>
+
+
   </head>
   <body>
 
-
+<p>dasdassda</p>
 <div class="container" id="app">
-  <h2 align="center">Mini Workshop Upload Image</h2>
+  <h1 align="center">Mini Workshop Upload Image</h1>
   <div v-if="!image">
-    <input type="file" class="form-control" @change="onF">
+    <input type="file" class="form-control" @change="onFileChange">
   </div>
   <div v-else>
-    <img :src="Image" width="400px" height="400px" class="img-responsive center-block"/>
+    <img :src="Image" id="img" width="400px" height="400px" class="img-responsive conter-block"/>
 
   </div>
 
+
+</div>
+
+<div id="div-1" class="col-50">
+
+</div>
+
+<div id="div-2" class="col-50">
 
 </div>
 <!-- <ul>
