@@ -10,14 +10,16 @@
 
 
 <div class="container" id="app">
-  <h2 align="center">Mini Workshop Limit Character</h2>
-  <div class="form-group">
-    <div class="input-group">
-      <input type="text" name="" value="" class="form-control" v-model="text" :maxlength="max">
-      <div class="input-group-addon" v-text="(max-text.length)"></div>
-    </div>
+  <h2 align="center">Mini Workshop Upload Image</h2>
+  <div v-if="!image">
+    <input type="file" class="form-control" @change="onF">
+  </div>
+  <div v-else>
+    <img :src="Image" width="400px" height="400px" class="img-responsive center-block"/>
 
   </div>
+
+
 </div>
 <!-- <ul>
     <li v-for="comment in comments"
@@ -140,7 +142,7 @@ Next Chapter : 16
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<!--
   <script type="text/javascript">
     new Vue({
       el:'#app',
@@ -150,7 +152,7 @@ Next Chapter : 16
 
       }
     })
-  </script>
+  </script> -->
   </body>
 
 
