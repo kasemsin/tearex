@@ -2,160 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
       <meta charset="utf-8">
-      <title> Vue.JS - TEAREX's LAB</title>
-      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> -->
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <title> MAX GO GO @Q@</title>
 
-
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
 
 
-      <div class="container" id="app">
-        <h2 align="center">Mini Workshop : ตระกร้าสินค้า </h2>
-      <div class="row">
-          <div  class="col-md-4" v-for="item in items">
-            <img :src="item.url" alt="" width="300px" height="300px" style="border:1px solid #000">
-            <h3><b>ชื่อสินค้า : {{item.name}}</b></h3>
-            <h4>ราคา : {{item.price}}</h4>
-            <input type="checkbox" name="" value="" class="form-control" @click="selected(item)">
-          </div>
-      </div>
-      <h2>ราคารวม : {{total()}} บาท</h2>
+    <!-- <div id="myDiv">
+{{message}}
+    </div> -->
 
-      </div>
+    <div id="app">
+
+<p>{{message1}}</p>
+<span> {{message2}}</span><br>
+
+<button @click="hello">Click me please!</button>
+
+    </div>
+
+
+    <div class="test"></div>
+
       <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
-<!-- <ul>
-    <li v-for="comment in comments"
-    is ="showcomment"
-    v-bind:commentpost="comment"
-    ></li>
-  </ul>
-<input type="text" v-model="newComment" v-on:keyup.enter="addComment"> -->
-<!-- <post title="MAX TREX" view="500"></post>
-
-    <showview title="Java Tutorial" v-bind:view=100></showview>
-    <showview title="Vue tutorial" ></showview>
-    <showview title="Photoshop" v-bind:view=500 ></showview> -->
-  <!-- <max></max>
-  <max></max><br>
-  <post></post>
-  <post></post> -->
-<!-- <template id="foodarea">
-    <div id="food">
-
-          <slot></slot>
-
-    </div>
-</template> -->
-<!--
-<div id="post">
-  Next chapter 16 <br>
-  หัวข้อ : {{title}} <br>
-  ข้อความ:{{message}}
-</div>
-
-<div id="comment">
-  <textarea name="name" rows="8" cols="80">{{text}}</textarea>
-</div>
-
-<div id="likeSystem">
-<button type="button" name="button" v-on:click="like=!like" >Like</button>
-{{like}}
-</div> -->
-<!-- <div id="vue-app">
-Next Chapter : 16
-  <br>
-  <span>ชื่อพนักงาน</span>
-  <input v-model="newData.empName">
-  <br>
-
-  <span>เงินเดือน</span>
-  <input v-model="newData.salary">
-  <br><br>
-  <button @click="addEmp">บันทึกข้อมูล</button>
-  <br>
-  <ul>
-    <li v-for="emp in empGroup">
-      {{emp.empName}} ได้เงินเดือน {{emp.salary}}
-    </li>
-
-      </ul>
-<h1>จำนวนเงินที่ต้องจ่ายพนักงาน : {{summation}}</h1>
-<h1>ค่าเฉลี่ย : {{avg}}</h1> -->
-<!--
-    <br><br>
-    <button type="button" v-on:click="like=!like">Like</button>
-    <h1 v-if="like">Hello Motherfucker !!!</h1>
-
-        <ul>
-          <li v-for="result in product">{{result}}</li>
-        </ul>
-
-
-        <ul>
-          <li v-for="emp in employee" v-if="emp.status">{{emp.name}} | {{emp.age}} | {{emp.status}}</li>
-        </ul>
-
-    Name : <input type="text" v-model="name" >
-    <br>
-    Food Fav :
-    <input type="checkbox" name="" value="Som-tum" v-model="foods">
-    <label>Som-tum</label>
-    <input type="checkbox" name="" value="Pizza" v-model="foods">
-    <label>Pizza</label>
-    <input type="checkbox" name="" value="Noodle" v-model = "foods">
-    <label>Noodle</label>
-    <br>
-    Gender :
-    <br>
-    <input type="radio" name="" value="Male" v-model="gender">
-    <label>Male</label>
-    <br>
-    <input type="radio" name="" value="Female" v-model="gender">
-    <label>Female</label>
-    <br>
-    Job :
-    <select v-model="job">
-              <option disabled value="">Choose your job</option>
-              <option>Programmer</option>
-              <option>Engineer</option>
-              <option>Merchant</option>
-    </select>
-    <hr>
-
-    NEXT CHAPTER : 10
-    <h1>Name : {{name}}</h1>
-    <h1>Job : {{job}}</h1>
-    <h1>Age : {{age}}</h1>
-    <h1>Food : {{foods}}</h1>
-    <h1>Website : <a v-bind:href="website">Click link...</a></h1>
-    <h1>Gender : {{gender}}</h1>
-
-    <input type="text" name="" v-bind:value="job">
-    </br></br>
-    <input type="text" v-on:keyup.enter="addCount" name="" value="">
-    <h1>Enter count:{{count}}</h1>
-    </br></br>
-
-    <button type="button" v-on:click="addAge" >Add</button>
-    <button type="button" v-on:click="SubtractAge">Subtract</button>
-    !-->
-<!-- </div> -->
-
-<!--
-  <script type="text/javascript">
-    new Vue({
-      el:'#app',
-      data:{
-          max:20,
-          text:'',
-
-      }
-    })
-  </script> -->
