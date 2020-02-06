@@ -3,8 +3,8 @@
 new Vue ({
 el:'#app',
 data:{
-message1:"Vuesasa1",
-message2:"Vuesasa2",
+message1:"test1",
+message2:"test2",
 isMe : true,
 users :[{
   id:1,
