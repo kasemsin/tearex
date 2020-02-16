@@ -1,9 +1,9 @@
 body {
-  background-color: lightblue;
+   background-image: url("http://postto.me/1x/htk.jpg");
 }
 
 h1 {
   color: navy;
-  margin-left: -15px;
-  margin-top: -15px;
+  margin-left: 0 px;
+  margin-top: 0 px;
 }
