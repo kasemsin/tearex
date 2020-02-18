@@ -17,3 +17,35 @@ h1 {
   margin-left: 0 px;
   margin-top: 0 px;
 }
+
+.border{
+  border-style: double;
+  border-width: 10px;
+  border-color: orange red green blue;
+  border-radius: 50px;
+
+}
+
+.b1{
+  border-left: 5px solid red;
+  background-color: lightgray;
+}
+
+.b2{
+  border-bottom: 5px solid red;
+  background-color: lightgray;
+}
+
+p.b3 {
+  border: 2px solid red;
+  border-radius: 12px;
+}
+
+.div1 {
+  border: 1px solid black;
+  margin-top: -30px;
+  margin-bottom: -10px;
+  margin-right: 400px;
+  margin-left: 10px;
+  background-color: lightblue;
+}
