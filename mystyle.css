@@ -43,9 +43,15 @@ p.b3 {
 
 .div1 {
   border: 1px solid black;
-  margin-top: -30px;
-  margin-bottom: -10px;
+  margin-top: -17px;
+  margin-bottom: -40px;
   margin-right: 400px;
   margin-left: 10px;
+  background-color: lightblue;
+}
+
+.div2 {
+  border: 1px solid black;
+  margin: 40px 200px 30px 100px;
   background-color: lightblue;
 }
