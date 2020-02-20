@@ -39,9 +39,11 @@ h1 {
 p.b3 {
   border: 2px solid red;
   border-radius: 12px;
+  margin-left: inherit;
 }
 
 .div1 {
+  width : 350px;
   border: 1px solid black;
   margin-top: -17px;
   margin-bottom: -40px;
@@ -51,7 +53,9 @@ p.b3 {
 }
 
 .div2 {
-  border: 1px solid black;
-  margin: 40px 200px 10px 100px;
+  border: 2px solid green;
+  margin: 40px 200px 10px 10px;
   background-color: lightblue;
+  outline: 5px dotted red;
+  outline-offset: 5px;
 }
