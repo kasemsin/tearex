@@ -4,12 +4,42 @@ body {
   background-position: right top;
   background-attachment: scroll;
 
-background: violet url("http://postto.me/1x/htk.jpg") no-repeat right top fixed;
+  background: violet url("http://postto.me/1x/htk.jpg") no-repeat right top fixed;
 
 
    /*background-repeat: repeat-x;*/
    margin-left: 10px
 
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+p {
+  text-indent: 0px;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  text-shadow: 3px 2px white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1em;
 }
 
 h1 {
