@@ -4,11 +4,11 @@ body {
   background-position: right top;
   background-attachment: scroll;
 
-background: violet url("http://postto.me/1x/htk.jpg") no-repeat right top fixed;
-
+background: violet url("http://postto.me/1x/htk.jpg") no-repeat fixed right top ;
+background-size: auto;
 
    /*background-repeat: repeat-x;*/
-   margin-left: 10px
+   margin-left: 100px
 
 }
 
