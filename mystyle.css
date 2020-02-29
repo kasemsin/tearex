@@ -12,8 +12,80 @@ background-size: auto;
 
 }
 
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+p {
+  text-indent: 0px;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  text-shadow: 3px 2px white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1em;
+}
+
 h1 {
   color: navy;
   margin-left: 0 px;
   margin-top: 0 px;
+}
+
+.border{
+  border-style: double;
+  border-width: 10px;
+  border-color: orange red green blue;
+  border-radius: 50px;
+
+}
+
+.b1{
+  border-left: 5px solid red;
+  background-color: lightgray;
+}
+
+.b2{
+  border-bottom: 5px solid red;
+  background-color: lightgray;
+}
+
+p.b3 {
+  border: 2px solid red;
+  border-radius: 12px;
+  margin-left: inherit;
+}
+
+.div1 {
+  width : 350px;
+  border: 1px solid black;
+  margin-top: -17px;
+  margin-bottom: -40px;
+  margin-right: 400px;
+  margin-left: 10px;
+  background-color: lightblue;
+}
+
+.div2 {
+  border: 2px solid green;
+  margin: 40px 200px 10px 10px;
+  background-color: lightblue;
+  outline: 5px dotted red;
+  outline-offset: 5px;
 }
