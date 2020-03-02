@@ -12,24 +12,19 @@ body {
 
 }
 
-a:link {
-  color: red;
+/* a:link, a:visited {
+  background-color: #ffcccc;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
+a:hover, a:active {
+  background-color: red;
+  cursor: wait;
+} */
 
 
 p {
@@ -73,12 +68,9 @@ p.b3 {
 }
 
 .div1 {
-  width : 350px;
+
   border: 1px solid black;
-  margin-top: -17px;
-  margin-bottom: -40px;
-  margin-right: 400px;
-  margin-left: 10px;
+  display:block;
   background-color: lightblue;
 }
 
@@ -88,4 +80,38 @@ p.b3 {
   background-color: lightblue;
   outline: 5px dotted red;
   outline-offset: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: navy;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+}
+
+
+li a:active {
+  background-color: green;
+}
+
+
+.active {
+  background-color: red;
 }
