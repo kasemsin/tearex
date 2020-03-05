@@ -1,3 +1,12 @@
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+
+
+
 body {
   background-image: url("http://postto.me/1x/htk.jpg");
   background-repeat: no-repeat;
@@ -99,6 +108,7 @@ li a {
   color: white;
   text-align: center;
   padding: 20px 40px;
+
   text-decoration: none;
 }
 
