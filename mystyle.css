@@ -1,91 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url("http://postto.me/1x/htk.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: scroll;
-
-background: violet url("http://postto.me/1x/htk.jpg") no-repeat fixed right top ;
-background-size: auto;
-
-   /*background-repeat: repeat-x;*/
-   margin-left: 100px
-
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
 }
 
-a:link {
-  color: red;
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
 }
 
-/* visited link */
-a:visited {
-  color: green;
+.header h1 {
+  font-size: 50px;
 }
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-/* selected link */
-a:active {
-  color: blue;
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-
-p {
-  text-indent: 0px;
-  text-align: justify;
-  letter-spacing: 1.5px;
-  text-shadow: 3px 2px white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: 1em;
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-h1 {
-  color: navy;
-  margin-left: 0 px;
-  margin-top: 0 px;
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
 }
 
-.border{
-  border-style: double;
-  border-width: 10px;
-  border-color: orange red green blue;
-  border-radius: 50px;
-
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
 }
 
-.b1{
-  border-left: 5px solid red;
-  background-color: lightgray;
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
-.b2{
-  border-bottom: 5px solid red;
-  background-color: lightgray;
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-p.b3 {
-  border: 2px solid red;
-  border-radius: 12px;
-  margin-left: inherit;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.div1 {
-  width : 350px;
-  border: 1px solid black;
-  margin-top: -17px;
-  margin-bottom: -40px;
-  margin-right: 400px;
-  margin-left: 10px;
-  background-color: lightblue;
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
 }
 
-.div2 {
-  border: 2px solid green;
-  margin: 40px 200px 10px 10px;
-  background-color: lightblue;
-  outline: 5px dotted red;
-  outline-offset: 5px;
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
