@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ::selection {
   color: red;
@@ -34,61 +35,117 @@ a:hover, a:active {
   background-color: red;
   cursor: wait;
 } */
-
-
-p {
-  text-indent: 0px;
-  text-align: justify;
-  letter-spacing: 1.5px;
-  text-shadow: 3px 2px white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: 1em;
+=======
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: navy;
-  margin-left: 0 px;
-  margin-top: 0 px;
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
 }
 
-.border{
-  border-style: double;
-  border-width: 10px;
-  border-color: orange red green blue;
-  border-radius: 50px;
-
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
 }
 
-.b1{
-  border-left: 5px solid red;
-  background-color: lightgray;
+.header h1 {
+  font-size: 50px;
 }
 
-.b2{
-  border-bottom: 5px solid red;
-  background-color: lightgray;
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+>>>>>>> 7d80781784838ad5873cab85787181ffdc69e879
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-p.b3 {
-  border: 2px solid red;
-  border-radius: 12px;
-  margin-left: inherit;
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+<<<<<<< HEAD
 .div1 {
 
   border: 1px solid black;
   display:block;
   background-color: lightblue;
+=======
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+>>>>>>> 7d80781784838ad5873cab85787181ffdc69e879
 }
 
-.div2 {
-  border: 2px solid green;
-  margin: 40px 200px 10px 10px;
-  background-color: lightblue;
-  outline: 5px dotted red;
-  outline-offset: 5px;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
 
 ul {
