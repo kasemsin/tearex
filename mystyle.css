@@ -119,10 +119,10 @@ body {
 }
 
 .pic {
-  height: 300px;
-  padding: 10px;
-  width: 600px;
 
+  padding: 10px;
+  width: 100%;
+height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
