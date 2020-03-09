@@ -119,8 +119,13 @@ body {
 }
 
 .pic {
-  height: 500px;
+  height: 300px;
   padding: 10px;
+  width: 600px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Fake image */
 .fakeimg {
