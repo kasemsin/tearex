@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-
-::selection {
-  color: red;
-  background: yellow;
-}
-
-
-
-
-body {
-  background-image: url("http://postto.me/1x/htk.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: scroll;
-
-background: violet url("http://postto.me/1x/htk.jpg") no-repeat fixed right top ;
-background-size: auto;
-
-   /*background-repeat: repeat-x;*/
-   margin-left: 100px
-
-}
-
-/* a:link, a:visited {
-  background-color: #ffcccc;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: red;
-  cursor: wait;
-} */
-=======
 * {
   box-sizing: border-box;
 }
@@ -50,7 +12,12 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  color: white;
+  background-image: url("https://www.innovationpolicyplatform.org/www.innovationpolicyplatform.org/system/files/BannerSpaceForum_0_0_0_0_0_0/index.jpg");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: left top;
+
 }
 
 .header h1 {
@@ -62,7 +29,6 @@ body {
   overflow: hidden;
   background-color: #333;
 }
->>>>>>> 7d80781784838ad5873cab85787181ffdc69e879
 
 /* Style the topnav links */
 .topnav a {
@@ -95,6 +61,10 @@ body {
   padding-left: 20px;
 }
 
+.pic {
+  width: 100%;
+  padding: 0px;
+}
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
@@ -124,20 +94,12 @@ body {
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
-.div1 {
-
-  border: 1px solid black;
-  display:block;
-  background-color: lightblue;
-=======
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
->>>>>>> 7d80781784838ad5873cab85787181ffdc69e879
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -148,37 +110,6 @@ body {
   }
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: navy;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 20px 40px;
-
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: blue;
-}
-
-
-li a:active {
-  background-color: green;
-}
-
-
-.active {
-  background-color: red;
+.spacing {
+  letter-spacing: 6px;
 }
