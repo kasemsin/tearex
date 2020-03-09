@@ -119,8 +119,8 @@ body {
 }
 
 .pic {
-  width: 100%;
-  padding: 0px;
+  height: 500px;
+  padding: 10px;
 }
 /* Fake image */
 .fakeimg {
