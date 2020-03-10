@@ -13,10 +13,12 @@ body {
   padding: 30px;
   text-align: center;
   color: white;
-  background-image: url("https://www.innovationpolicyplatform.org/www.innovationpolicyplatform.org/system/files/BannerSpaceForum_0_0_0_0_0_0/index.jpg");
-  background-repeat: no-repeat;
-  background-color: white;
-  background-position: left top;
+  background-image: url("https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676__340.jpg");
+
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-color: black;
+  background-position: center;
 
 }
 
@@ -117,12 +119,27 @@ body {
 }
 
 .pic {
+
+  padding: 10px;
   width: 100%;
-  padding: 0px;
+height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pop_pic {
+
+  height: 10%;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
+  height: auto;
   width: 100%;
   padding: 20px;
 }
