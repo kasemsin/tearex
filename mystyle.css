@@ -126,7 +126,7 @@ body {
 
   padding: 10px;
   width: 100%;
-  height: auto;
+height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -141,13 +141,13 @@ body {
   margin-right: auto;
 } */
 
-/* img.pic:hover {
+img.pic:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
-} */
+}
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
