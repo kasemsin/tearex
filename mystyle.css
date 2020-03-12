@@ -6,6 +6,7 @@ body {
   font-family: Arial;
   padding: 10px;
   background: #f1f1f1;
+
   margin: 0;
 }
 
@@ -282,4 +283,10 @@ input[type=text] {
 
 input[type=text]:focus {
   width: 100%;
+}
+
+
+.test {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
