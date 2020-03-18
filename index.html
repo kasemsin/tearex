@@ -70,16 +70,23 @@
         <h2 >Welcome aboard ,Commanders !</h2>
         <h5>Title description, Mar 9, 2020</h5>
    <img class="pic" src="https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/69665809_520443318496850_3982588234298294272_o.png?_nc_cat=109&_nc_sid=8024bb&_nc_ohc=fKXn4WYOwGwAX93ljWf&_nc_ht=scontent.fbkk5-1.fna&oh=60dc6135ff0fd8a919be13907e51eb97&oe=5E8E00AD" alt="Terrain" >
-        <p>Nice to meet you <3</p>
+        <p>Nice to meet you <span id="tdate"></span></p>
+        <script>
+        var d = new Date();
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        document.getElementById("tdate").innerHTML = "on "+days[d.getDay()] +" !";
+        </script>
         <p>Feel free to visit my gorgeous website. The website styled with CSS/HTML languages.</p>
       </div>
-      <div class="card">
+      <a href="https://www.facebook.com/tearexthecreator" target="_blank" >
+      <div class="card" >
         <h2>NEW _PROJECT : Custom Design</h2>
-        <h5>Title description, Mar 8, 2020   </h5>
-         <img class="pic" src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/67302599_504447430096439_1181576538563280896_n.jpg?_nc_cat=103&_nc_sid=dd9801&_nc_eui2=AeGHZufAnTHLcUjL-3Q6FEINRplc10zz2kx7qMdAcDlB_KKXqiku7le0yfNAAcfaqQdvRNKjYIOIp7GZDWwWxJ_CFOlSEGK2aMtltym_UJusGw&_nc_ohc=ynsClIKj58YAX9yoK13&_nc_ht=scontent.fbkk5-4.fna&oh=fdc8e90e913977cbc0116b3ca1aee94b&oe=5E91CD2F" alt="Spaceman" >
+        <h5>Title description, Mar 8, 2020</h5>
+         <img class="pic"  src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/67302599_504447430096439_1181576538563280896_n.jpg?_nc_cat=103&_nc_sid=dd9801&_nc_eui2=AeGHZufAnTHLcUjL-3Q6FEINRplc10zz2kx7qMdAcDlB_KKXqiku7le0yfNAAcfaqQdvRNKjYIOIp7GZDWwWxJ_CFOlSEGK2aMtltym_UJusGw&_nc_ohc=ynsClIKj58YAX9yoK13&_nc_ht=scontent.fbkk5-4.fna&oh=fdc8e90e913977cbc0116b3ca1aee94b&oe=5E91CD2F" alt="Spaceman" >
         <p>More than 100 followers !</p>
         <p >Thank you for your supports ,I'm glad you love it <3</p>
       </div>
+    </a>
     </div>
     <div class="rightcolumn">
       <div class="card">
